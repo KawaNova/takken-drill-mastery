@@ -1,0 +1,30 @@
+# Google Play Data Safety Declaration for Takken Drill (com.kawanova.takkendrill)
+
+data_collected:
+  - data_type: Device or other identifiers (Advertising ID)
+    collected: true
+    shared: true
+    purpose: Advertising or marketing (via Google Mobile Ads SDK / AdMob)
+    ephemeral: false
+    optional: false
+
+  - data_type: App info and performance (Crash logs, diagnostics)
+    collected: true
+    shared: false
+    purpose: Analytics / App functionality
+    ephemeral: true
+    optional: false
+
+data_not_collected:
+  - Personal info (Name, Email, Address, Phone number)
+  - Financial info (Credit cards, bank accounts)
+  - Location (Precise or approximate location)
+  - Photos, Videos, Audio
+  - Files and docs
+  - User Quiz Answers & Progress (All quiz history and bookmark data are stored strictly on-device using Jetpack DataStore; zero personal learning telemetry is transmitted to external servers)
+
+security_practices:
+  data_encrypted_in_transit: true
+  can_request_data_deletion: false
+  committed_to_play_families_policy: false
+  independent_security_review: false
